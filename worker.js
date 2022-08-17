@@ -42,8 +42,8 @@ function generateSitemap() {
   let sitemap = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
   slugs.forEach(
     (slug) =>
-      (sitemap +=
-        "<url><loc>https://" + MY_DOMAIN + "/" + slug + "</loc></url>")
+    (sitemap +=
+      "<url><loc>https://" + MY_DOMAIN + "/" + slug + "</loc></url>")
   );
   sitemap += "</urlset>";
   return sitemap;
